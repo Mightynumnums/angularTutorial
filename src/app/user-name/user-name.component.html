@@ -1,0 +1,21 @@
+<div>
+  <label>User Name</label>
+  <input
+    type="text"
+    class="from-control"
+    [(ngModel)]="username">
+    <p>{{username}}</p>
+
+  <button
+    class="btn btn-primary"
+    [disabled]="username === ''"
+    (click)="username = ''">Create New User Name
+  </button>
+
+
+  <p>{{CreateUserName}}</p>
+  <p>{{allowClick}}</p>
+</div>
+
+
+
