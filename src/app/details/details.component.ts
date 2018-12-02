@@ -18,6 +18,6 @@ export class DetailsComponent{
  toggleTextVisibility() {
    this.showText = !this.showText
    this.instructions = 'Hide Details'
-   this.log.push(this.log.length +1)
+   this.log.push(new Date())
  }
 }
