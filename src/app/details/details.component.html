@@ -1,0 +1,12 @@
+<div class='details'>
+<button 
+type = 'button'
+class='btn btn-info'
+(click)="toggleTextVisibility()" 
+>
+{{instructions}}
+</button>
+<p *ngIf="!showText">Secret Password is Tuna</p>
+<div *ngFor="let logItem of log" class="counter">{{logItem}}</div>
+
+</div>

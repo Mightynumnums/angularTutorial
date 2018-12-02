@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import {ServerComponent} from './server/server.component'
 import {HeaderComponent} from './header/header.component';
 import { UserNameComponent } from './user-name/user-name.component';
+import { DetailsComponent } from './details/details.component';
 
 
 
@@ -15,6 +16,7 @@ import { UserNameComponent } from './user-name/user-name.component';
     ServerComponent,
     HeaderComponent,
     UserNameComponent,
+    DetailsComponent,
 
    
   ],

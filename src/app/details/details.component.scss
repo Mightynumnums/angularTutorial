@@ -1,0 +1,25 @@
+
+.details {
+  text-align: center;
+  background-color: lightsalmon;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+button {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.counter {
+  background-color: yellow;
+  color: blue;
+  padding: 2px;
+  margin: 2px auto 2px auto;
+  width: 35px;
+  border: 3px solid palevioletred;
+}
