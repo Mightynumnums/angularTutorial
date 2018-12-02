@@ -4,16 +4,14 @@
     type="text"
     class="from-control"
     [(ngModel)]="username">
-    <p>{{username}}</p>
 
   <button
     class="btn btn-primary"
     [disabled]="username === ''"
-    (click)="username = ''">Create New User Name
+    (click)="onCreateUserName()">Create New User Name
   </button>
 
-
-  <p>{{CreateUserName}}</p>
+  <p *ngIf="userWasUpdated">User was created {{createUserName}}</p>
   <p>{{allowClick}}</p>
 </div>
 

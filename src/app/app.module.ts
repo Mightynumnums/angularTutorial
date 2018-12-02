@@ -5,8 +5,6 @@ import {FormsModule} from '@angular/forms'
 import { AppComponent } from './app.component';
 import {ServerComponent} from './server/server.component'
 import {HeaderComponent} from './header/header.component';
-import { SuccessAlertComponent } from './success-alert/success-alert.component';
-import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { UserNameComponent } from './user-name/user-name.component';
 
 
@@ -16,8 +14,6 @@ import { UserNameComponent } from './user-name/user-name.component';
     AppComponent,
     ServerComponent,
     HeaderComponent,
-    SuccessAlertComponent,
-    WarningAlertComponent,
     UserNameComponent,
 
    

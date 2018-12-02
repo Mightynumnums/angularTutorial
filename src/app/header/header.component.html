@@ -19,7 +19,10 @@
 </button>
 
 
-<p>{{serverCreationStation}}</p>
+<p *ngIf="serverUpdated; else noServer">{{serverCreationStation}}</p>
+<ng-template #noServer>
+  <p>No server was updated</p>
+</ng-template>
 <p>{{allowClick}}</p>
 
 </div>

@@ -10,13 +10,14 @@ export class UserNameComponent {
   allowClick = false
   createUserName = 'no user name has been changed'
   username=''
+  userWasUpdated = false
 
   constructor() {
-  
    }
 
    onCreateUserName() { 
      this.createUserName = 'User name updated. It is ' + this.username
+     this.userWasUpdated = true
   }
 
   onUpdateUserName(event: Event) {
