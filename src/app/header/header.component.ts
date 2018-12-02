@@ -10,8 +10,9 @@ import {Component} from '@angular/core'
 export class HeaderComponent {
   allowClick = false;
   serverCreationStation = 'No server was created'
-  serverName ='Please enter your server name here'
+  serverName ='TestServer'
   serverUpdated = false
+  servers = ['TestServer', 'TestServer2']
 
   constructor() {
     setTimeout(() => {
@@ -21,6 +22,7 @@ export class HeaderComponent {
 
   onCreateServer() {
     this.serverCreationStation = 'Server was created. You called it ' + this.serverName
+    this.servers.push(this.serverName)
     this.serverUpdated = true
   }
 

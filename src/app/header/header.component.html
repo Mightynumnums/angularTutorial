@@ -1,5 +1,3 @@
-<div class='header'>
-
   <label>Server Name</label>
   <!-- <input
     type="text"
@@ -18,11 +16,9 @@
   (click)="onCreateServer()">Add Server
 </button>
 
-
 <p *ngIf="serverUpdated; else noServer">{{serverCreationStation}}</p>
 <ng-template #noServer>
   <p>No server was updated</p>
 </ng-template>
-<p>{{allowClick}}</p>
 
-</div>
+<app-server *ngFor="let server of servers"></app-server>
